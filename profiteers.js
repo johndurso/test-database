@@ -1,4 +1,4 @@
-const publicFigures = [
+const profiteers = [
 	{
 		name: "Bill Boolin",
 		company: "McDonalds",
@@ -36,23 +36,23 @@ const publicFigures = [
 	},
 ];
 
-function figuresTemplate(figure) {
+function profiteersTemplate(profit) {
   return `
     <div class="card">
-    	<h2 class="figureName"><span>Name:</span> ${figure.name}</h2>
-    	<p><span>Company:</span> ${figure.company}</p>
-    	<p><span>Position:</span> ${figure.position}</p>
-    	<p><span>Net worth:</span> ${figure.net}</p>
-    	<p class="source"><span>Sources:</span> <a href="${figure.sources}">${figure.sources}</a></p>
+    	<h2 class="figureName"><span>Name:</span> ${profit.name}</h2>
+    	<p><span>Company:</span> ${profit.company}</p>
+    	<p><span>Position:</span> ${profit.position}</p>
+    	<p><span>Net worth:</span> ${profit.net}</p>
+    	<p class="source"><span>Sources:</span> <a href="${profit.sources}">${profit.sources}</a></p>
     </div>
   `;
 }
 
 
-document.getElementById("publicFigures").innerHTML = `
-	<h1>Working with COVID-19</h1>
-	<p>Listed below are the public figures forcing their workers to continue to work after testing positive for COVID-19</p>
-	<h3>Total count = ${publicFigures.length}</h3>
-	${publicFigures.map(figuresTemplate).join('')}
+document.getElementById("profiteers").innerHTML = `
+	<h1>Profiting off of COVID-19</h1>
+	<p>Listed below are the public figures who have made unreasonable profit amidst the COVID-19 pandemic.</p>
+	<h3>Total count = ${profiteers.length}</h3>
+	${profiteers.map(profiteersTemplate).join('')}
 
 `;
