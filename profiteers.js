@@ -1,38 +1,31 @@
 const profiteers = [
 	{
-		name: "Bill Boolin",
-		company: "McDonalds",
+		name: "John Doe",
+		company: "Google",
 		position: "CEO",
-		net: "$15.2B",
-		sources: "https://website.com/"
+		net: "$582.2B",
+		sources: "https://google.com/"
 	},
 	{
-		name: "Tom Jones",
-		company: "Lucky Strike",
+		name: "Tim apple",
+		company: "Apple",
 		position: "CEO",
-		net: "$3.9B",
-		sources: "https://website.com/"
+		net: "$91.4B",
+		sources: "https://apple.com/"
 	},
 	{
 		name: "Jeff Bezos",
 		company: "Amazon",
 		position: "CEO",
 		net: "$150.4B",
-		sources: "https://website.com/"
+		sources: "https://amazon.com/"
 	},
 	{
-		name: "Gary Williams",
-		company: "Dicks Sporting Goods",
+		name: "Donald Duck",
+		company: "Disney",
 		position: "CEO",
-		net: "$1.7B",
-		sources: "https://website.com/"
-	},
-	{
-		name: "Ronald Keith",
-		company: "Burger King",
-		position: "CFO",
-		net: "$583.8M",
-		sources: "https://website.com/"
+		net: "$844.7B",
+		sources: "https://disney.com/"
 	},
 ];
 
