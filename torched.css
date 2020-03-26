@@ -42,10 +42,22 @@ body {
 }
 
 #publicFigures .card {
-	background: #F9A825;
+	background: #FF9800;
+	box-shadow: 5px 5px 0px #FFE0B2;
 }
+
+#publicFigures .card:hover {
+	box-shadow: 10px 10px 0px #E65100;
+}
+
 #profiteers .card {
-	background: #8BC34A;
+	background: #4CAF50;
+	box-shadow: 5px 5px 0px #C8E6C9;
+}
+
+#profiteers .card:hover {
+	box-shadow: 10px 10px 0px #1B5E20;
+
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -94,16 +106,16 @@ p.source a {
 	color: #000;
 	margin-top: 20px;
 	padding: 20px;
-	box-shadow: 5px 5px 0px #fff;
+	box-shadow: 5px 5px 0px;
 	transition: 0.2s ease all;
 }
 
 .card:hover {
-	box-shadow: 10px 10px 0px #fff;
+	box-shadow: 10px 10px 0px ;
 }
 
 @media screen and (max-width: 800px) {
-	#app {
+	#publicfigures {
 		width: 100%;
 		max-width: 90%;
 		padding: 25px;
