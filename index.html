@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" href="torched.css">
-	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+	<script src='jquery.min.js'></script>
 
 </head>
 <body>
@@ -23,23 +23,26 @@
 	      <p>Include as much information as possible, <strong>with sources</strong>.</p>
 	    </div>
 	    <div class="modal-body">
-	      <form name="contact" netlify>
+	      <form name="contact" netlify netlify-honeypot="bot-field">
+	      	<p class="hidden">
+				<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+			</p>
 	      	<h4>Your information:</h4>
 			<div class="grid">
-				<div class="item mr-25"><label>Name <input type="text" name="subName" /></label></div>
+				<div class="item"><label>Name <input type="text" name="subName" /></label></div>
 				<div class="item"><label>Email <input type="email" name="subEmail" /></label></div>
 			</div>
 			<h4 style="margin-top: 30px;">Public figure information:</h4>
 			<div class="grid">
-				<div class="item mr-25"><label>Name <input type="text" name="figName" /></label></div>
+				<div class="item"><label>Name <input type="text" name="figName" /></label></div>
 				<div class="item"><label>Company <input type="text" name="figCompany" /></label></div>
 			</div>
 			<div class="grid">
-				<div class="item mr-25"><label>Position <input type="text" name="figPosition" /></label></div>
+				<div class="item"><label>Position <input type="text" name="figPosition" /></label></div>
 				<div class="item"><label>Net Worth <input type="text" name="figNet" /></label></div>
 			</div>
 			<div class="grid">
-				<div class="item mr-25"><label>Description <input type="text" name="figDesc" /></label></div>
+				<div class="item"><label>Description <input type="text" name="figDesc" /></label></div>
 				<div class="item"><label>Quote <input type="text" name="figQuote" /></label></div>
 			</div>
 			<div class="grid">
@@ -52,18 +55,6 @@
 	  </div>
 	</div>
 	<script src='main.js'></script>
-	<script>
-	$(".modal-trigger")
-	    .click(function (e) {
-	        e.preventDefault();
-	        dataModal = $(this).attr("data-modal");
-	        $("#" + dataModal).css({"display": "block"});
-	        $("body").css({"overflow-y": "hidden"});
-	    });
-	$(".close-modal, .modal-window").click(function () {
-	    $(".modal").css({"display": "none"});
-	    $("body").css({"overflow-y": "auto"});
-	});
-</script>
+	<script>$(".modal-trigger").click(function(e){e.preventDefault();dataModal=$(this).attr("data-modal");$("#"+dataModal).css({"display":"block"});$("body").css({"overflow-y":"hidden"})});$(".close-modal, .modal-window").click(function(){$(".modal").css({"display":"none"});$("body").css({"overflow-y":"auto"})});</script>
 </body>
 </html>
