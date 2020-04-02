@@ -344,3 +344,7 @@ form button:hover:before {
 		background: red;
 	}
 }
+
+.hidden {
+	display: none !important;
+}
