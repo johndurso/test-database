@@ -5,21 +5,65 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" href="torched.css">
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+
 </head>
 <body>
-	<div class="nav">
-		<div class="navItem"><a href="#covidWorkers">Forced labor</a></div>
-		<div class="navItem"><a href="#profiteers">Profiteers</a></div>
-		<div class="navItem"><a href="#">Item 3</a></div>
-		<div class="navItem"><a href="#">Item 4</a></div>
-	</div>
 	<div class="purpose">
-		<h1>Our purpose</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum assumenda neque natus, ullam delectus exercitationem placeat voluptates est voluptatem, quod nam eum nemo. Reiciendis perspiciatis mollitia, hic porro totam quod sapiente nisi! Modi quisquam dolore minus autem veniam, facilis praesentium et dolorem mollitia provident, laboriosam officia fugit labore, excepturi porro.</p>
+		<h1>COVID  CAPITALISTS</h1>
+		<button href="#" class="modal-trigger" data-modal="modal-name">Submit a public figure</a>
 	</div>
-	<div id="publicFigures"></div>
-	<div id="profiteers"></div>
-	<script src='publicfigures.js'></script>
-	<script src='profiteers.js'></script>
+	<div id="covidList"></div>
+	<div class="modal" id="modal-name">
+	  <div class="modal-sandbox modal-window"></div>
+	  <div class="modal-box">
+	    <div class="modal-header">
+	      <div class="close-modal">✖</div> 
+	      <h2>Submit a public figure</h2>
+	      <p>Include as much information as possible, <strong>with sources</strong>.</p>
+	    </div>
+	    <div class="modal-body">
+	      <form name="contact" netlify>
+	      	<h4>Your information:</h4>
+			<div class="grid">
+				<div class="item mr-25"><label>Name <input type="text" name="subName" /></label></div>
+				<div class="item"><label>Email <input type="email" name="subEmail" /></label></div>
+			</div>
+			<h4 style="margin-top: 30px;">Public figure information:</h4>
+			<div class="grid">
+				<div class="item mr-25"><label>Name <input type="text" name="figName" /></label></div>
+				<div class="item"><label>Company <input type="text" name="figCompany" /></label></div>
+			</div>
+			<div class="grid">
+				<div class="item mr-25"><label>Position <input type="text" name="figPosition" /></label></div>
+				<div class="item"><label>Net Worth <input type="text" name="figNet" /></label></div>
+			</div>
+			<div class="grid">
+				<div class="item mr-25"><label>Description <input type="text" name="figDesc" /></label></div>
+				<div class="item"><label>Quote <input type="text" name="figQuote" /></label></div>
+			</div>
+			<div class="grid">
+				<div class="item"><label>Source<input type="text" name="figSource" /></label></div>
+			</div>
+				<button type="submit">SUBMIT</button>
+			</p>
+			</form>
+	    </div>
+	  </div>
+	</div>
+	<script src='main.js'></script>
+	<script>
+	$(".modal-trigger")
+	    .click(function (e) {
+	        e.preventDefault();
+	        dataModal = $(this).attr("data-modal");
+	        $("#" + dataModal).css({"display": "block"});
+	        $("body").css({"overflow-y": "hidden"});
+	    });
+	$(".close-modal, .modal-window").click(function () {
+	    $(".modal").css({"display": "none"});
+	    $("body").css({"overflow-y": "auto"});
+	});
+</script>
 </body>
 </html>

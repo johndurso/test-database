@@ -1,63 +1,84 @@
- @import url('https://fonts.googleapis.com/css?family=Barlow:400,700&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Merriweather:400,900&display=swap');
 
 body {
-	background: #000;
-	color: #fff;
+	background: #fff;
+	color: #000;
 	padding: 0;
 	margin: 0;
-	font-family: 'Barlow', sans-serif;
-}
-
-.nav {
-	position: fixed;
-	width: 100%;
-	padding: 10px 0;
-	text-align: center;
-	background: #fff;
-	border-bottom: 3px solid #000;
-}
-
-.navItem {
-	display: inline;
-	width: auto;
-	margin: 5px 10px;
+    font-family: 'Merriweather', serif;
 }
 
 .purpose {
-	display: none;
+	position: fixed;
+	top: 0;
 	width: 100%;
-	background: #fff;
-	color: #000;
-	padding: 0 50px;
+	background: red;
+	color: #fff;
+	padding: 50px;
 	margin: auto;
 	box-sizing: border-box;
+	text-align: center;
+	border-bottom: 1px solid #000;
 }
 
-#publicFigures,
-#profiteers {
+.purpose h1 {
+	font-size: 60px;
+	letter-spacing: 4px;
+	padding: 20px 0;
+	border-bottom: 1px solid red;
+}
+
+.purpose p {
+	margin: 20px 0;
+}
+
+.purpose button {
+	position: relative;
+	overflow: hidden;
+	outline: none;
+	border: 2px solid #fff;
+	padding: 15px 30px;
+	color: #fff;
+	background: transparent;
+	font-size: 20px;
+    font-family: 'Merriweather', serif;
+}
+
+.purpose button:before {
+	content: '';
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	background: #000;
+	height: 100%;
 	width: 100%;
-	max-width: 800px;
-	margin: auto;
-	padding: 50px;
+	transition: 0.3s ease all;
 }
 
-#publicFigures .card {
-	background: #FF9800;
-	box-shadow: 5px 5px 0px #FFE0B2;
+.purpose button:hover {
+	background: transparent;
+	color: #fff;
 }
 
-#publicFigures .card:hover {
-	box-shadow: 10px 10px 0px #E65100;
+.purpose button:hover:before {
+	left: 0;
 }
 
-#profiteers .card {
-	background: #4CAF50;
-	box-shadow: 5px 5px 0px #C8E6C9;
+#covidList {
+	width: 100%;
+	max-width: 960px;
+	margin: 350px auto 50px auto;
+	color: #fff;
 }
 
-#profiteers .card:hover {
-	box-shadow: 10px 10px 0px #1B5E20;
+#covidList .card {
+	background: red;
+	box-shadow: 5px 5px 0px #000;
+}
 
+#covidList .card:hover {
+	box-shadow: 10px 10px 0px darkred;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -74,6 +95,7 @@ h1 {
 h2 {
 	font-size: 2em;
 	font-weight: 400;
+	color: #fff;
 }
 
 h2 span,
@@ -89,18 +111,25 @@ p {
 	margin: 5px 0;
 }
 
-p.source {
-	margin-top: 20px;
-	font-size: 0.9em;
+#covidList p {
+	color: #fff;
+	margin: 20px 0;
 }
 
-p.source span {
-	background: none;
+p.source {
+	font-size: 16px;
 }
 
 p.source a {
-	color: #000;
+	color: #fff;
+	display: inline;
+	transition: 0.2s ease all;
 }
+
+p.source a:hover {
+	color: red;
+}
+
 
 .card {
 	color: #000;
@@ -114,10 +143,204 @@ p.source a {
 	box-shadow: 10px 10px 0px ;
 }
 
-@media screen and (max-width: 800px) {
-	#publicfigures {
+/* Contact form styling */
+
+form {
+	width: 90%;
+	margin: auto;
+	font-family: 'Merriweather', serif;
+}
+
+form h4 {
+	display: inline-block;
+	background: #fff;
+	color: red;
+	font-size: 20px;
+	padding: 3px;
+}
+
+form .grid {
+	display: grid;
+	width: 100%;
+ 	grid-template-columns: 48% 48%;
+ 	align-content: space-around;
+}
+
+form .item {
+	margin: 0 10px;
+}
+
+form input {
+	width: 100%;
+	padding: 5px;
+	font-size: 20px;
+	background: #fff;
+	border: 1px solid transparent;
+	margin-bottom: 8px;
+}
+
+form label {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 5px 0;
+}
+
+form button {
+	position: relative;
+	z-index: 1000;
+	overflow: hidden;
+	width: 50%;
+	padding: 15px 30px;
+	color: #fff;
+	border: 2px solid red;
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+	margin-top: 20px;
+	transition: 0.2s ease all;
+}
+
+form button:before {
+	content: '';
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	background: red;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	transition: 0.2s ease all;
+}
+
+form button:hover {
+	cursor: pointer;
+	color: #fff;
+}
+
+form button:hover:before {
+	left: 0;
+}
+
+
+/* Modal styling */
+.modal,
+.modal-box {
+	z-index: 900;
+}
+
+.modal-window {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: transparent;
+}
+
+.modal {
+	display: none; 
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,.8);
+	overflow: auto;
+}
+
+.modal-box {
+	position: relative;
+	width: 80%;
+	max-width: 800px;
+	margin: 100px auto;
+	border: 1px solid #fff;
+}
+
+.modal-header {
+	padding: 20px 40px;
+	background: #000;
+	color: #ffffff;
+	text-align: center;
+}
+
+.modal-header h2 {
+	margin-top: 20px;
+}
+
+.modal-body {
+	position: relative;
+	background: #000;
+	padding: 30px;
+}
+
+/* Close Button */
+.close-modal {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	display: inline;
+	cursor: pointer;
+	background: #fff;
+	color: #000;
+	padding: 5px 15px;
+	height: 20px;
+	width: 20px;
+	border: 2px solid transparent;
+	transition: 0.2s ease all;
+}
+
+.close-modal:hover {
+	background: #000;
+	color: #fff;
+	border-color: #fff;
+}
+
+.modal-trigger, button {
+	padding: 20px 40px;
+	background: transparent;
+	text-decoration: none;
+}
+
+.modal-trigger {
+	transition: ease .2s;
+}
+
+.modal-trigger:hover {
+	cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 991px) {
+	.purpose h1 {
+		font-size: 32px;
+	}
+	.purpose button {
+		font-size: 16px;
+	}
+	#covidList {
 		width: 100%;
 		max-width: 90%;
 		padding: 25px;
+		margin-top: 250px;
+	}
+	#covidList .card {
+		box-shadow: 0 0 0 !important;
+	}
+	form {
+		width: 100%;
+	}
+	form .grid {
+		display: block;
+		width: 95%;
+	}
+	form .mr-25 {
+		margin-right: auto !important;
+	}
+	form button {
+		width: 100%;
+		background: red;
 	}
 }
