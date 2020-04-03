@@ -157,7 +157,7 @@ const covidList = [
 function covidTemplate(covid) {
   return `
     <div class="card">
-    	<h2 class="figureName"><span>Name:</span> <span class="result">${covid.name}</span></h2>
+    	<h2 class="figureName"><span class="result">${covid.name}</span></h2>
     	<p><span>Company:</span> ${covid.company}</p>
     	<p><span>Position:</span> ${covid.position}</p>
     	<p><span>Net worth:</span> ${covid.net}</p>
