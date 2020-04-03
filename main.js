@@ -175,3 +175,33 @@ document.getElementById("covidList").innerHTML = `
 	</div>
 	${covidList.map(covidTemplate).join('')}
 `;
+
+
+$(function(){
+    var purpose = $('.purpose');
+    $(window).scroll(function(){
+        if($(window).scrollTop() <= 20){
+       		purpose.removeClass('top');
+          $('.top-btn').removeClass('show');
+        } else {
+          purpose.addClass('top');
+          $('.top-btn').addClass('show');
+        }
+    });
+})
+
+//smooth scroll
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
