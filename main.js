@@ -189,6 +189,10 @@ $(".close-modal, .modal-window").click(function () {
     $("body").css({"overflow-y": "auto"});
 });
 
+$(".close-success-message").click(function () {
+    $(".success").css({"display": "none"});
+});
+
 // top btn
 $(function(){
     var purpose = $('.purpose');

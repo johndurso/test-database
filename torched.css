@@ -59,7 +59,8 @@ body {
 	margin: 20px 0;
 }
 
-.purpose button {
+.purpose button,
+.success button {
 	position: relative;
 	overflow: hidden;
 	display: block;
@@ -73,7 +74,8 @@ body {
     font-family: 'Merriweather', serif;
 }
 
-.purpose button:before {
+.purpose button:before,
+.success button:before {
 	content: '';
 	z-index: -1;
 	position: absolute;
@@ -85,12 +87,14 @@ body {
 	transition: 0.3s ease all;
 }
 
-.purpose button:hover {
+.purpose button:hover,
+.success button:hover {
 	background: transparent;
 	color: #fff;
 }
 
-.purpose button:hover:before {
+.purpose button:hover:before,
+.success button:hover:before {
 	left: 0;
 }
 
@@ -433,4 +437,40 @@ form button:hover:before {
 	.card p span {
 		display: block;
 	}
+}
+
+.success h4 {
+	font-size: 18px;
+	margin: 20px 0;
+}
+
+.success p {
+	display: block;
+	font-size: 16px;
+	line-height: 25px;
+	width: 80%;
+	max-width: 500px;
+	margin: 15px auto;
+}
+
+span.dth {
+	display: inline;
+	background: #27e4f9;
+	padding: 3px;
+}
+
+.dth a {
+	text-decoration: none;
+	font-weight: 700;
+	color: #000;
+}
+
+a.back {
+	display: inline-block;
+	margin-top: 30px;
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px 15px;
 }
