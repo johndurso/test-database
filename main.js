@@ -176,7 +176,20 @@ document.getElementById("covidList").innerHTML = `
 	${covidList.map(covidTemplate).join('')}
 `;
 
+//modal
+$(".modal-trigger")
+    .click(function (e) {
+        e.preventDefault();
+        dataModal = $(this).attr("data-modal");
+        $("#" + dataModal).css({"display": "block"});
+        $("body").css({"overflow-y": "hidden"});
+    });
+$(".close-modal, .modal-window").click(function () {
+    $(".modal").css({"display": "none"});
+    $("body").css({"overflow-y": "auto"});
+});
 
+// top btn
 $(function(){
     var purpose = $('.purpose');
     $(window).scroll(function(){
