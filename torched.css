@@ -491,6 +491,9 @@ form button:hover:before {
 	.purpose h1 {
 		margin-bottom: 10px;
 	}
+	.quote p {
+		font-size: 12px;
+	}
 	.top {
 		padding: 5px 5px !important;
 	}
