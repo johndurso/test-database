@@ -16,11 +16,19 @@ body {
 
 .top {
 	padding: 25px !important;
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	-o-transition: 0.2s ease all;
 	transition: 0.2s ease all;
 }
 
 .top h1 {
 	font-size: 30px !important;
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	-o-transition: 0.2s ease all;
 	transition: 0.2s ease all;
 }
 
@@ -40,6 +48,10 @@ body {
 	box-sizing: border-box;
 	text-align: center;
 	border-bottom: 1px solid #000;
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	-o-transition: 0.2s ease all;
 	transition: 0.2s ease all;
 }
 
@@ -50,13 +62,24 @@ body {
 	font-size: 60px;
 	letter-spacing: 4px;
 	padding: 5px 10px;
-	margin-bottom: 30px;
 	text-shadow: 2px 0px 0px red;
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	-o-transition: 0.2s ease all;
 	transition: 0.2s ease all;
 }
 
 .purpose p {
-	margin: 20px 0;
+	margin: 10px 0 20px 0;
+}
+
+.quote {
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	-o-transition: 0.2s ease all;
+	transition: 0.2s ease all;
 }
 
 .purpose button,
@@ -154,12 +177,15 @@ h2.figureName {
 }
 
 p.source {
-	font-size: 16px;
 }
 
 p.source a {
 	color: #fff;
 	display: inline;
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	-o-transition: 0.2s ease all;
 	transition: 0.2s ease all;
 }
 
@@ -173,6 +199,10 @@ p.source a:hover {
 	margin-top: 20px;
 	padding: 20px;
 	box-shadow: 5px 5px 0px;
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	-o-transition: 0.2s ease all;
 	transition: 0.2s ease all;
 }
 
@@ -234,6 +264,10 @@ form button {
 	font-family: 'Merriweather', serif;
 	font-size: 16px;
 	margin-top: 20px;
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	-o-transition: 0.2s ease all;
 	transition: 0.2s ease all;
 }
 
@@ -247,6 +281,10 @@ form button:before {
 	color: #fff;
 	width: 100%;
 	height: 100%;
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	-o-transition: 0.2s ease all;
 	transition: 0.2s ease all;
 }
 
@@ -325,6 +363,10 @@ form button:hover:before {
 	height: 20px;
 	width: 20px;
 	border: 2px solid transparent;
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	-o-transition: 0.2s ease all;
 	transition: 0.2s ease all;
 }
 
@@ -356,6 +398,10 @@ form button:hover:before {
 	bottom: 10px;
 	left: 10px;
 	background: #000;
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	-o-transition: 0.2s ease all;
 	transition: 0.2s ease all;
 }
 
@@ -369,6 +415,10 @@ form button:hover:before {
 	line-height: 30px;
 	padding: 10px;
 	border: 2px solid transparent;
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	-o-transition: 0.2s ease all;
 	transition: 0.2s ease all;
 }
 
@@ -379,12 +429,22 @@ form button:hover:before {
 
 .hidden {
 	display: none !important;
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	-o-transition: 0.2s ease all;
+	transition: 0.2s ease all;
 }
 
 .show {
 	display: block !important;
 	visibility: visible !important;
 	opacity: 1;
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	-o-transition: 0.2s ease all;
+	transition: 0.2s ease all;
 }
 
 @media screen and (max-width: 991px) {

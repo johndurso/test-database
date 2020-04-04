@@ -163,7 +163,7 @@ function covidTemplate(covid) {
     	<p><span>Net worth:</span> ${covid.net}</p>
     	<p><span>Description:</span> ${covid.description}</p>
     	<p><span>Quote:</span> ${covid.quotes}</p>
-    	<p class=source><span>Source: <a target="_blank" href="${covid.source}">Click here to view source</a></span></p>
+    	<p class=source><span>Source: <a target="_blank" href="${covid.source}">Click here</a> to view source</span></p>
     </div>
   `;
 }
@@ -171,7 +171,8 @@ function covidTemplate(covid) {
 
 document.getElementById("covidList").innerHTML = `
 	<div style="font-size: 16px; color: #000 !important; text-align: center;">
-		In alphabetical order, by first name.
+		An evergrowing list of public figures who have deceived the public or profited from the COVID-19 pandemic.<br><br>
+		<strong>In alphabetical order, by first name.</strong>
 	</div>
 	${covidList.map(covidTemplate).join('')}
 `;
@@ -200,9 +201,12 @@ $(function(){
         if($(window).scrollTop() <= 20){
        		purpose.removeClass('top');
           $('.top-btn').removeClass('show');
+          $('.quote').addClass('show');
         } else {
           purpose.addClass('top');
           $('.top-btn').addClass('show');
+          $('.quote').removeClass('show');
+          $('.quote').addClass('hidden');
         }
     });
 })
