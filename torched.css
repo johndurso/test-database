@@ -447,12 +447,51 @@ form button:hover:before {
 	transition: 0.2s ease all;
 }
 
+.success h4 {
+	font-size: 18px;
+	margin: 20px 0;
+}
+
+.success p {
+	display: block;
+	font-size: 16px;
+	line-height: 25px;
+	width: 80%;
+	max-width: 500px;
+	margin: 15px auto;
+}
+
+span.dth {
+	display: inline;
+	background: #27e4f9;
+	padding: 3px;
+}
+
+.dth a {
+	text-decoration: none;
+	font-weight: 700;
+	color: #000;
+}
+
+a.back {
+	display: inline-block;
+	margin-top: 30px;
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px 15px;
+}
+
 @media screen and (max-width: 991px) {
 	.purpose h1 {
 		font-size: 32px;
 	}
 	.purpose button {
 		font-size: 16px;
+	}
+	.quote p {
+		font-size: 12px;
 	}
 	#covidList {
 		width: 100%;
@@ -502,38 +541,14 @@ form button:hover:before {
 	}
 }
 
-.success h4 {
-	font-size: 18px;
-	margin: 20px 0;
-}
-
-.success p {
-	display: block;
-	font-size: 16px;
-	line-height: 25px;
-	width: 80%;
-	max-width: 500px;
-	margin: 15px auto;
-}
-
-span.dth {
-	display: inline;
-	background: #27e4f9;
-	padding: 3px;
-}
-
-.dth a {
-	text-decoration: none;
-	font-weight: 700;
-	color: #000;
-}
-
-a.back {
-	display: inline-block;
-	margin-top: 30px;
-	background: #000;
-	color: #fff;
-	text-decoration: none;
-	font-size: 20px;
-	padding: 10px 15px;
+@media screen and (max-width: 400px) {
+	#covidList {
+		margin-top: 220px;
+	}
+	.purpose h1 {
+		font-size: 28px;
+	}
+	.top h1 {
+		font-size: 24px !important;
+	}
 }
