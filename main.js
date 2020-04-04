@@ -163,7 +163,7 @@ function covidTemplate(covid) {
     	<p><span>Net worth:</span> ${covid.net}</p>
     	<p><span>Description:</span> ${covid.description}</p>
     	<p><span>Quote:</span> ${covid.quotes}</p>
-    	<p class=source><span>Source: <a target="_blank" href="${covid.source}">${covid.source}</a></span></p>
+    	<p class=source><span>Source: <a target="_blank" href="${covid.source}">Click here to view source</a></span></p>
     </div>
   `;
 }
