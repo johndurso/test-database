@@ -171,7 +171,7 @@ function covidTemplate(covid) {
 
 document.getElementById("covidList").innerHTML = `
 	<div style="font-size: 16px; color: #000 !important; text-align: center;">
-		An evergrowing list of public figures who have deceived the public or profited from the COVID-19 pandemic.<br><br>
+		An evergrowing list of public figures who have deceived the public or profited from the <a class="tracker" target="_blank" href="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" style="text-decoration: none;">COVID-19&nbsp;pandemic</a>.<br><br>
 		<strong>In alphabetical order, by first name.</strong>
 	</div>
 	${covidList.map(covidTemplate).join('')}
