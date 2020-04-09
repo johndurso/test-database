@@ -27,6 +27,15 @@ const covidList = [
    source: "https://thefederalist.com/2020/03/13/how-the-wuhan-virus-is-accomplishing-the-green-new-deals-goals/"
  },
  {
+   name: "Dianne Feinstein",
+   company: "N/A",
+   position: "Senator (D-CA)",
+   net: "$58.5 million",
+   description: "Sold between $1.5M and $5M in stock after a Senate Intelligence Committee briefing on COVID-19, just before the stock market crash.",
+   quotes: "N/A",
+   source: "https://www.usatoday.com/story/news/politics/2020/03/30/coronavirus-stock-sales-senators-burr-inhofe-loeffler-feinstein/5086707002/"
+ },
+ {
    name: "Gary Cohn",
    company: "N/A",
    position: "Former chief economic adviser, White House",
@@ -60,7 +69,16 @@ const covidList = [
    net: "$100 million",
    description: "Reopened Liberty University in the midst of the crisis.",
    quotes: "\“99 percent of [students] are not at the age to be at risk and they don't have conditions that put them at risk.\"",
-   source: "https://www.nytimes.com/2020/03/29/us/politics/coronavirus-liberty-university-falwell.html?smtyp=cur&smid=tw-nytpolitics https://www.nbcnews.com/think/opinion/trump-s-coronavirus-quarantine-rhetoric-fuels-dangerously-politicized-pandemic-ncna1170406"
+   source: "https://www.nytimes.com/2020/03/29/us/politics/coronavirus-liberty-university-falwell.html?smtyp=cur&smid=tw-nytpolitics"
+ },
+ {
+   name: "Jim Inhofe",
+   company: "N/A",
+   position: "Senator (R-OK)",
+   net: "$8.7 million",
+   description: "Sold between $230k and $500k in stock after a Senate Intelligence Committee briefing on COVID-19, just before the stock market crash.",
+   quotes: "N/A",
+   source: "https://www.usatoday.com/story/news/politics/2020/03/30/coronavirus-stock-sales-senators-burr-inhofe-loeffler-feinstein/5086707002/"
  },
  {
    name: "Joel Freedman",
@@ -124,6 +142,15 @@ const covidList = [
    description: "Consistently downplayed severity of COVID-19, called for reopening the economy.",
    quotes: "\“All right, enough of this. Time to start reopening.”",
    source: "https://twitter.com/michaeljknowles/status/1244050622745214976"
+ },
+ {
+   name: "Richard Burr",
+   company: "N/A",
+   position: "Senator (R-NC)",
+   net: "$1.7 million",
+   description: "Sold between $678k and $1.5 million in stock after a Senate Intelligence Committee briefing on COVID-19, just before the stock market crash.",
+   quotes: "N/A",
+   source: "https://www.usatoday.com/story/news/politics/2020/03/30/coronavirus-stock-sales-senators-burr-inhofe-loeffler-feinstein/5086707002/"
  },
  {
    name: "Richard “Dick” Kovacevich",
