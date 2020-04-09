@@ -36,6 +36,24 @@ const covidList = [
    source: "https://thehill.com/policy/finance/489310-gary-cohn-says-economy-could-be-reopened-on-incremental-basis"
  },
  {
+   name: "Jared Kushner",
+   company: "Kushner Companies, LLC",
+   position: "Senior Advisor to the President of the United States",
+   net: "$800 million",
+   description: "Where do we even begin? Kushner initially downplayed the severity of COVID-19, insisting it was a media hoax. Then his brother’s company, Oscar Health, started building a government website to direct patients to COVID-19 testing sites days after the President suggested such a site would be available, suggesting a conflict of interest. More recently, critics are raising eyebrows at a provision in the federal recovery bill calling for a mortgage freeze for owners of low- and moderate-income properties, which stands to benefit companies like the Kushner family’s real estate firm. Lastly, he’s been accused of running a “shadow [pandemic response] task force” behind the scenes with private sector leaders, including health care executives.",
+   quotes: "\"This truly is a historic challenge. We have not seen something like this in a very long time, but I am confident that bringing innovative solutions to these hard problems, we will make progress.\"",
+   source: "https://www.businessinsider.com/coronavirus-jared-kushner-trump-media-exaggerated-outbreak-report-2020-3"
+ },
+ {
+   name: "Jeff Bezos",
+   company: "Amazon",
+   position: "CEO",
+   net: "$117.3 billion",
+   description: "Amazon failed to provide proper protective equipment for workers and offered inadequate compensation for sick time or time off, forcing workers to choose between their health and their job. Multiple workers at Amazon warehouses across the country have tested postive for COVID-19. On March 30th, Amazon fired worker Chris Smalls (a black man) for organizing a strike protesting warehouse conditions, with their top lawyer recommending they \"make him the face of the entire union/organizing movement\" because \"he's not smart, or articulate.\"",
+   quotes: "\"Much of the essential work we do cannot be done from home.\"",
+   source: "https://www.businessinsider.com/amazon-workers-are-afraid-to-go-to-work-heres-why-2020-4 https://www.businessinsider.com/amazon-fires-warehouse-worker-led-strike-protest-covid19-cornavirus-response-2020-3 https://www.businessinsider.com/leaked-memo-reveals-amazon-reportedly-led-pr-campaign-against-worker-2020-4"
+ },
+ {
    name: "Jerry Falwell, Jr.",
    company: "Liberty University",
    position: "President",
@@ -61,6 +79,15 @@ const covidList = [
    description: "The medical supply manufacturer Covidien bought the company Newport Medical Instruments, which was contracted by DHHS to manufacture cheaper portable ventilators, in 2012. Once acquired, Covidien then halted the project and exited the contract, supposedly to prevent a cheaper ventilator product from pushing their product out of the market. This ultimately contributed to the ventilator shortage during the COVID-19 pandemic.",
    quotes: "N/A",
    source: "https://www.nytimes.com/2020/03/29/business/coronavirus-us-ventilator-shortage.html"
+ },
+ {
+   name: "Kelly Loeffler",
+   company: "N/A",
+   position: "Senator (R-GA)",
+   net: "$500 million",
+   description: "Sold millions of dollars worth of stocks after being privately notified of COVID-19 on Jan 24th at a Senate Health Committee briefing, then proceeded to downplay the severity of the crisis for months.",
+   quotes: "\"Democrats have dangerously and intentionally misled the American people on #Coronavirus readiness. Here’s the truth: @realDonaldTrump & his administration are doing a great job working to keep Americans healthy & safe.\"",
+   source: "https://www.vanityfair.com/news/2020/04/kelly-loeffler-protective-gear-investment"
  },
  {
    name: "Kevin Hassett",
