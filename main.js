@@ -1,5 +1,14 @@
 const covidList = [
  {
+   name: "Alex Cruz",
+   company: "British Airways",
+   position: "CEO",
+   net: "£1.3 million per year",
+   description: "Cut pilot salaries by 50% and started preparing for layoffs without taking CEO pay cut. Finally only took 2-month pay cut after pressure.",
+   quotes: "N/A",
+   source: "https://onemileatatime.com/british-airways-pilots-pay-cut/"
+ },
+ {
    name: "Apoorva Mehta",
    company: "Instacart",
    position: "CEO",
@@ -7,6 +16,33 @@ const covidList = [
    description: "Mass hired workers to meet demand during the crisis without offering hazard pay, protective equipment, or paid sick time.",
    quotes: "N/A",
    source: "https://www.npr.org/2020/03/30/823767492/amazon-instacart-grocery-delivery-workers-strike-for-coronavirus-protection-and-"
+ },
+ {
+   name: "Baruch Feldheim",
+   company: "N/A",
+   position: "N/A",
+   net: "N/A",
+   description: "Hoarded 192,000 N95 masks, 130,000 surgical masks, and 600,000 medical-grade gloves.",
+   quotes: "N/A",
+   source: "https://www.nytimes.com/2020/04/02/nyregion/brooklyn-coronavirus-price-gouging.html"
+ },
+ {
+   name: "Brian Kemp",
+   company: "N/A",
+   position: "83rd Governor of Georgia",
+   net: "$5.2 million",
+   description: "Pushed a false narrative regarding how the virus spreads, and likely delayed Georgia's stay-at-home order.",
+   quotes: "\"What we've been telling people from directives from the CDC for weeks now that if you start feeling bad stay home, those individuals could have been infecting people before they ever felt bad. But we didn't know that until the last 24 hours...\"",
+   source: "https://edition.cnn.com/2020/04/02/politics/fact-check-georgia-gov-brian-kemp-coronavirus-no-symptoms-stay-at-home/index.html"
+ },
+ {
+   name: "Dan Bane",
+   company: "Trader Joe's",
+   position: "CEO",
+   net: "$5.2 million",
+   description: "Aggressively pushing against unionization during coronavirus vulnerability; discouraging staff from wearing PPE.",
+   quotes: "N/A",
+   source: "https://www.nytimes.com/2020/04/02/business/trader-joes-unionization-coronavirus.html"
  },
  {
    name: "Dan Patrick",
@@ -23,8 +59,17 @@ const covidList = [
    position: "Founder and Executive Director",
    net: "Unknown",
    description: "Peddled the narrative that COVID-19 accomplishes the same ends as climate activism.",
-   quotes: "\“Coronavirus is a glimpse of the long-term pain a Green New Deal and environmental radicalism would inflict on America.”",
+   quotes: "\"Coronavirus is a glimpse of the long-term pain a Green New Deal and environmental radicalism would inflict on America.\" ",
    source: "https://thefederalist.com/2020/03/13/how-the-wuhan-virus-is-accomplishing-the-green-new-deals-goals/"
+ },
+ {
+   name: "David Green",
+   company: "Hobby Lobby",
+   position: "CEO",
+   net: "$6.2 billion",
+   description: "Ignored state stay-at-home orders; Hobby Lobby still open and trying to pretend it's \"essential\".",
+   quotes: "N/A",
+   source: "https://www.businessinsider.com/hobby-lobby-stores-still-open-in-some-states-amid-coronavirus-2020-4"
  },
  {
    name: "Dianne Feinstein",
@@ -70,6 +115,15 @@ const covidList = [
    description: "Reopened Liberty University in the midst of the crisis.",
    quotes: "\“99 percent of [students] are not at the age to be at risk and they don't have conditions that put them at risk.\"",
    source: "https://www.nytimes.com/2020/03/29/us/politics/coronavirus-liberty-university-falwell.html?smtyp=cur&smid=tw-nytpolitics"
+ },
+ {
+   name: "Jim Bakker",
+   company: "The Jim Bakker Show",
+   position: "Pastor, Televangelist",
+   net: "$500,000",
+   description: "Tried to make money off the virus by selling a \"silver solution\" cure.",
+   quotes: "Guest on his show: \"Well, let's say it hasn't been tested on this strain of the coronavirus, but it has been tested on other strains of the coronavirus and has been able to eliminate it within 12 hours,\" Sellman said. Bakker: \"Totally eliminates it. Kills it. Deactivates it.\" ",
+   source: "https://www.npr.org/2020/03/11/814550474/missouri-sues-televangelist-jim-bakker-for-selling-fake-coronavirus-cure"
  },
  {
    name: "Jim Inhofe",
@@ -126,10 +180,19 @@ const covidList = [
    source: "https://www.cnbc.com/2020/02/25/larry-kudlow-says-us-has-contained-the-coronavirus-and-the-economy-is-holding-up-nicely.html"
  },
  {
+   name: "Lawrence Bacow",
+   company: "Harvard University",
+   position: "President",
+   net: "$2 million",
+   description: "Subcontractors in campus dining halls laid off and not eligible for 30 days of paid leave and benefits.",
+   quotes: "N/A",
+   source: "https://freebeacon.com/latest-news/harvard-not-paying-all-workers-during-coronavirus-shutdown-despite-40-9b-endowment/"
+ },
+ {
    name: "Lloyd Blankfein",
    company: "Goldman Sachs",
    position: "Former CEO",
-   net: "$1 billion",
+   net: "$40 billion University endowment (largest in the US)",
    description: "Called for those with “lower risk to the disease” to return to work within a few weeks.",
    quotes: "\“Extreme measures to flatten the virus “curve” is sensible-for a time-to stretch out the strain on health infrastructure. But crushing the economy, jobs and morale is also a health issue-and beyond. Within a very few weeks let those with a lower risk to the disease return to work.”",
    source: "https://twitter.com/lloydblankfein/status/1241907502662418437"
@@ -187,6 +250,15 @@ const covidList = [
    description: "Oversees Fox News, whose anchors have been criticized for downplaying the crisis and peddling misinformation.",
    quotes: "N/A",
    source: "https://www.nytimes.com/2020/03/22/business/coronavirus-fox-news-lachlan-murdoch.html"
+ },
+ {
+   name: "Tate Reeves",
+   company: "N/A",
+   position: "65th Governor of Mississippi",
+   net: "$100K-$1M",
+   description: "Ovverrode local stay-at-home policies and declared most businesses \"essential\".",
+   quotes: "\"Mississippi's never going to be China.\" ",
+   source: "https://www.businessinsider.com/coronavirus-mississippi-governor-executive-order-most-businesses-essential-2020-3"
  },
  {
    name: "Thomas J. Donohue",
