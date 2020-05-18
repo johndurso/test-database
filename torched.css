@@ -86,11 +86,11 @@ body {
 .success button {
 	position: relative;
 	overflow: hidden;
-	display: block;
+	display: inline-block;
 	outline: none;
 	border: 2px solid #fff;
 	padding: 15px 30px;
-	margin: auto;
+	margin-right: 10px;
 	color: #fff;
 	background: transparent;
 	font-size: 20px;
@@ -121,6 +121,14 @@ body {
 	left: 0;
 }
 
+.purpose a {
+	text-decoration: none !important;
+}
+
+.purpose a button:hover {
+	cursor: pointer;
+}
+
 #covidList {
 	width: 100%;
 	max-width: 960px;
@@ -145,13 +153,69 @@ body {
 	border-bottom: 5px solid red;
 }
 
-#covidList .card {
+#covidList .card,
+#action {
 	background: #000;
 	box-shadow: 5px 5px 0px red;
 }
 
-#covidList .card:hover {
+#covidList .card:hover,
+#action:hover {
 	box-shadow: 10px 10px 0px darkred;
+}
+
+#action {
+	background: #000;
+	margin: 0 auto 50px auto;
+	max-width: 960px;
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	-o-transition: 0.2s ease all;
+	transition: 0.2s ease all;
+}
+
+#action h2 {
+	text-align: center;
+	font-size: 60px;
+	padding-top: 40px;
+	margin-bottom: 25px;
+	text-shadow: 2px 0px 0px red;
+	font-weight: 700;
+	letter-spacing: 4px;
+}
+
+#action ul {
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#action ul li {
+	margin-bottom: 25px;
+}
+
+#action ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 100;
+	letter-spacing: 1px;
+	background: red;
+	padding: 5px 10px;
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	-o-transition: 0.2s ease all;
+	transition: 0.2s ease all;
+}
+
+#action ul li a:hover {
+	color: red;
+	background: #000;
+	padding: 5px 10px;
+	border: 1px solid red;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -191,9 +255,6 @@ h2.figureName {
 #covidList p {
 	color: #fff;
 	margin: 20px 0;
-}
-
-p.source {
 }
 
 p.source a {
